@@ -5,7 +5,7 @@ var git;
 
 var fakeChild = function(error, result){
     return {
-        exec: function(cmd, callback){
+        execFile: function(cmd, params, callback){
             callback(error, result);
         }
     };
